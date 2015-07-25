@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function Time()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var d=today.getUTCDate();
+var mo=today.getMonth()+1;
+var wd=today.getDay();
+var y=today.getFullYear();
+var n = today.getMilliseconds();
+document.getElementById('weekday').src="w" + wd + ".png";
+
+document.getElementById('d1').src="d" + Math.floor(d/10) + ".png";
+document.getElementById('d2').src="d" + d%10 + ".png";
+document.getElementById('d3').src="d" + Math.floor(mo/10) + ".png";
+document.getElementById('d4').src="d" + mo%10 + ".png";
+ys=y.toString();
+document.getElementById('d5').src="d" + ys.charAt(0) + ".png";
+document.getElementById('d6').src="d" + ys.charAt(1) + ".png";
+document.getElementById('d7').src="d" + ys.charAt(2) + ".png";
+document.getElementById('d8').src="d" + ys.charAt(3) + ".png";
+
+document.getElementById('d9').src="d" + Math.floor(h/10) + ".png";
+document.getElementById('d10').src="d" + h%10 + ".png";
+
+document.getElementById('d11').src="d" + Math.floor(m/10) + ".png";
+document.getElementById('d12').src="d" + m%10 + ".png";
+
+document.getElementById('d13').src="d" + Math.floor(s/10) + ".png";
+document.getElementById('d14').src="d" + s%10 + ".png";
+
+document.getElementById('d15').src="d" + Math.floor(n/100) + ".png";
+
+t=setTimeout(function(){Time()},100);
+}
+</script>
+</head>
+
+<body onload="Time()">
+<table width="1050" align="center" CELLSPACING="0" CELLPADDING="0"><tr><td>
+<img  src="spw.png" id="weekday"></img><img  src="sp.png"></img><img  src="sp.png" id="d1"></img><img  src="sp.png" id="d2"></img><img  src="viiva.png"></img><img  src="sp.png" id="d3"></img><img  src="sp.png" id="d4"></img><img  src="viiva.png"></img><img  src="sp.png" id="d5"></img><img  src="sp.png" id="d6"></img><img  src="sp.png" id="d7"></img><img  src="sp.png" id="d8"></img><img  src="sp.png"></img><img  src="sp.png" id="d9"></img><img  src="sp.png" id="d10"></img><img  src="kp.png"></img><img  src="sp.png" id="d11"></img><img  src="sp.png" id="d12"></img><img  src="kp.png"></img><img  src="sp.png" id="d13"></img><img  src="sp.png" id="d14"><img  src="piste.png"></img><img  src="sp.png" id="d15"></img>
+</td></tr></table>(UTC+02:00) Helsinki
+
+</a></center>
